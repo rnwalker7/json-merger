@@ -1,4 +1,4 @@
-import { VM } from "vm2";
+import VM from "vm";
 import Operation from "./Operation";
 
 export default class ExpressionOperation extends Operation {
@@ -43,10 +43,13 @@ export default class ExpressionOperation extends Operation {
     };
 
     // Create VM
-    const vm = new VM({ sandbox });
+    const context = VM.createContext(sandbox);
 
     // Evaluate the expression
-    return vm.run(expression);
+    const code = 'eval("' + expression + '");';
+    const retValue = VM.runInContext(code, context);
+
+    return retValue;
   }
 }
 
