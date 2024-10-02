@@ -1,3 +1,7 @@
+# NOTICE
+
+This is a fork of @boschni/json-merger, as he hasn't had any GitHub activity since April 2023. I am taking over package maintenance for now, but if he decides he wants to start again, I'll be happy to merge any changes back into his repo.
+
 # json-merger
 
 Merge JSON (or YAML) files and objects with operations like $import $remove $replace $merge and more.
