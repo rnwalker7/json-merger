@@ -1,6 +1,6 @@
 {
   "name": "@rnwalker7/json-merger",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Merge JSON (or YAML) files and objects with indicators like $import $remove $replace $merge etc",
   "main": "dist/index.js",
   "bin": {
